@@ -93,7 +93,7 @@ export default{
   }
 });
 
-axios.get('/article1.json')
+axios.get(''https://wondrous-mochi-5b5535.netlify.app/article1.json')
   .then((response) => {
     this.tous_les_article = response.data.Article;
   })
@@ -101,7 +101,7 @@ axios.get('/article1.json')
     console.error(error);
   });
 
-  axios.get('/article_image.json')
+  axios.get('https://wondrous-mochi-5b5535.netlify.app/article_image.json')
   .then((response) => {
     this.micro_article = response.data.Article;
   })
