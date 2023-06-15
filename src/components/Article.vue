@@ -35,7 +35,7 @@ export default{
  }}
  ,
  mounted() {
- axios.get(`/article1.json?id=${this.id}`)
+ axios.get(``https://wondrous-mochi-5b5535.netlify.app/article1.json?id=${this.id}`)
    .then((response) => {
      this.Article_unique = response.data.Article.find(article => article.id.toString() === this.id);
      console.log(this.Article_unique);
@@ -46,7 +46,7 @@ export default{
    });
 
 
-   axios.get(`/article_image.json?id=${this.id}`)
+   axios.get(`https://wondrous-mochi-5b5535.netlify.app/article_image.json?id=${this.id}`)
    .then((response) => {
      this.Article_unique = response.data.Article.find(article => article.id.toString() === this.id);
      console.log(this.Article_unique);
